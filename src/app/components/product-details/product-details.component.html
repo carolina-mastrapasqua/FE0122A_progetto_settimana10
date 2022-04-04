@@ -1,0 +1,24 @@
+<h2>Product Details</h2>
+<div *ngIf="!productDetails">
+    <div class="d-flex justify-content-center">
+        <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div *ngIf="productDetails" class="card-body rounded text-center">
+        <h4 class="card-title">{{ productDetails.name }}</h4>
+        <p class="card-text">
+            {{ productDetails.description }} <br /> {{ productDetails.price | currency: "EUR" }}
+        </p>
+        <div class="card-footer mt-5">
+            <button type="button" class="btn btn-primary m-1" (click)="addToCart(productDetails)">
+        Aggiungi al carrello
+      </button>
+            <button type="button" class="btn btn-primary m-1" [routerLink]="['/']">
+        Torna al negozio
+      </button>
+        </div>
+    </div>
+</div>

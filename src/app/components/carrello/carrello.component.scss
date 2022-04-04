@@ -1,0 +1,25 @@
+.ifClause {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card {
+    max-width: 330px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.card-text:last-child {
+    margin-bottom: 20px;
+}
+
+.bg-danger {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,7 @@
+<div class="ifClause" *ngIf="cart.length == 0">Non ci sono elementi nel carrello</div>
+<div class="card col-4" *ngFor="let item of cart">
+    <div class="card-body">
+        <h3 class="card-title mb-3 mt-2">{{ item.name }}</h3>
+        <p class="card-text">{{ item.price | currency: "EUR" }}</p>
+    </div>
+</div>

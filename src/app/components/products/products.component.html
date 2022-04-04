@@ -1,0 +1,11 @@
+<div class="contenitore">
+    <div>
+        <div class="card" *ngFor="let product of products">
+            <div class="card-body">
+                <h2 class="card-title mb-3 mt-2"> {{product.name}} </h2>
+                <p class="card-text"> {{product.description}}</p>
+                <button class="btn btn-primary" [routerLink]="['products/', product.id]">Details</button>
+            </div>
+        </div>
+    </div>
+</div>
